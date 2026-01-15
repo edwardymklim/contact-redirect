@@ -1,14 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>Redirecting…</title>
+    <meta charset="utf-8" />
+    <title>Redirecting to Quote Form…</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Helvetica, Arial, sans-serif;
+        background-color: #ffffff;
+        color: #111111;
+        text-align: center;
+      }
+
+      .wrapper {
+        max-width: 420px;
+        padding: 24px;
+      }
+
+      .headline {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 12px;
+      }
+
+      .subtext {
+        font-size: 15px;
+        opacity: 0.8;
+      }
+    </style>
+
     <script>
+      // Delay before redirecting to homepage + anchor
       setTimeout(function () {
-        window.location.href = "https://insuranceinlethbridge.com/#contact-us";
-      }, 700); // 600–900ms works well for mobile
+        window.location.href =
+          "https://insuranceinlethbridge.com/#contact-us";
+      }, 700); // delay in milliseconds (600–900 recommended)
     </script>
   </head>
-  <body></body>
-</html>
 
+  <body>
+    <div class="wrapper">
+      <div class="headline">Taking you to the quote form</div>
+      <div class="subtext">This will only take a moment…</div>
+    </div>
+  </body>
+</html>
